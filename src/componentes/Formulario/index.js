@@ -9,18 +9,25 @@ const Formulario = (props) => {
     const [cargo, setCargo] = useState("");
     const [imagem, setImagem] = useState("");
     const [time, setTime] = useState("");
+    const [mensagemErro, setMensagemErro] = useState("")
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
-        props.aoColaboradorCadastrado({
-            nome,
-            cargo,
-            imagem,
-            time,
-        });
-        setNome("");
-        setCargo("");
-        setImagem("");
+        setMensagemErro("")
+        if (time !== "" || 0) {
+            props.aoColaboradorCadastrado({
+                nome,
+                cargo,
+                imagem,
+                time,
+            });
+            setNome("");
+            setCargo("");
+            setImagem("");
+            setTime("");
+        } else {
+            setMensagemErro("Selecione um time!");
+        }
     };
 
     return (
@@ -54,6 +61,7 @@ const Formulario = (props) => {
                     valor={time}
                     aoAlterado={(valor) => setTime(valor)}
                 />
+                <span className="mensagem-erro">{mensagemErro}</span>
                 <Botao texto="Criar card" />
             </form>
         </section>

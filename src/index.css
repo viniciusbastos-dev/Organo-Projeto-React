@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 
 body {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* body {
@@ -16,6 +16,12 @@ body {
 } */
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.mensagem-erro {
+    color: #d14d4b;
+    font-size: 18px;
+    display: block;
 }
