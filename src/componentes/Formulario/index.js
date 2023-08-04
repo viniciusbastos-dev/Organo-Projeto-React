@@ -4,25 +4,20 @@ import CampoTexto from "../CampoTexto";
 import ListaSuspensa from "../ListaSuspensa";
 import Botao from "../Botao";
 
-const Formulario = () => {
-    const times = [
-        "Programação",
-        "Front-End",
-        "Data Science",
-        "Devops",
-        "UX e Design",
-        "Mobile",
-        "Inovação e Gestão",
-    ];
-
+const Formulario = (props) => {
     const [nome, setNome] = useState("");
     const [cargo, setCargo] = useState("");
     const [imagem, setImagem] = useState("");
     const [time, setTime] = useState("");
 
-    const aoSalvar = (event) => {
-        event.preventDefault();
-        console.log("Form enviado ", nome, cargo, imagem, time);
+    const aoSalvar = (evento) => {
+        evento.preventDefault();
+        props.aoColaboradorCadastrado({
+            nome,
+            cargo,
+            imagem,
+            time,
+        });
     };
 
     return (
@@ -50,8 +45,9 @@ const Formulario = () => {
                     aoAlterado={(valor) => setImagem(valor)}
                 />
                 <ListaSuspensa
+                    obrigatorio={true}
                     label="Time"
-                    itens={times}
+                    itens={props.nomeDoTime}
                     valor={time}
                     aoAlterado={(valor) => setTime(valor)}
                 />

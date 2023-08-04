@@ -1,8 +1,8 @@
 import "./CampoTexto.css";
 
 const CampoTexto = (props) => {
-    const aoDigitado = (event) => {
-        props.aoAlterado(event.target.value);
+    const aoDigitado = (evento) => {
+        props.aoAlterado(evento.target.value);
     };
 
     return (
