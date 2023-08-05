@@ -19,9 +19,3 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
-
-.mensagem-erro {
-    color: #d14d4b;
-    font-size: 18px;
-    display: block;
-}
