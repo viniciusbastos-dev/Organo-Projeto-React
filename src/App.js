@@ -49,7 +49,7 @@ function App() {
     };
 
     return (
-        <div className="App">
+        <>
             <Banner />
             <Formulario
                 nomeDoTime={times.map((time) => time.nome)}
@@ -69,7 +69,7 @@ function App() {
                 />
             ))}
             <Rodape />
-        </div>
+        </>
     );
 }
 
