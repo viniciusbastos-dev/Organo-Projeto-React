@@ -53,3 +53,7 @@
     cursor: pointer;
     color: #ff4b4b;
 }
+
+.colaborador .favoritar {
+    margin-top: 20px;
+}
