@@ -1,4 +1,6 @@
 import { useState } from "react";
+
+import "./App.css";
 import Banner from "./componentes/Banner";
 import Formulario from "./componentes/Formulario";
 import Time from "./componentes/Time";
@@ -294,9 +296,7 @@ function App() {
             />
             <section className="times">
                 <div className="wrapper">
-                    <div className="titulo">
-                        <h1>Minha Organização:</h1>
-                    </div>
+                    <h1>Minha Organização:</h1>
                     <button
                         className="toggle-form"
                         onClick={alterarVisibilidade}

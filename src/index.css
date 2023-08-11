@@ -3,47 +3,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-.times .wrapper {
-    display: flex;
-    padding-right: 140px;
-    margin-bottom: 80px;
-}
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding-left: 240px;
-}
-
-.times h1 {
-    color: #6278f7;
-    font-size: 40px;
-    font-family: "Prata", serif;
-    font-weight: 400;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.times h1::after {
-    content: "";
-    background-color: #6278f7;
-    height: 4px;
-    width: 64px;
-    margin-top: 14px;
-}
-
-.toggle-form {
-    background: transparent url(/public/imagens/toggle-button.png);
-    padding: 50px;
-    border: 0;
-    cursor: pointer;
-    transition-duration: 300ms;
-}
-
-.toggle-form:active {
-    transform: translate(2px, 2px);
+img {
+    user-select: none;
+    pointer-events: none;
 }

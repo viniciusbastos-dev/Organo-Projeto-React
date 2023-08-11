@@ -4,18 +4,13 @@ import Campo from "../Campo";
 import ListaSuspensa from "../ListaSuspensa";
 import Botao from "../Botao";
 
-const Formulario = ({
-    times,
-    aoCadastrar,
-    cadastrarTime,
-    visibilidade,
-}) => {
+const Formulario = ({ times, aoCadastrar, cadastrarTime, visibilidade }) => {
     const [nome, setNome] = useState("");
     const [cargo, setCargo] = useState("");
     const [imagem, setImagem] = useState("");
     const [time, setTime] = useState("");
     const [nomeTime, setNomeTime] = useState("");
-    const [corTime, setCorTime] = useState("");
+    const [corTime, setCorTime] = useState("#6278f7");
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
